@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/bg">
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView 
+            android:id="@+id/color_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF3030"/>
+        <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:max="0xff"
+        android:background="@mipmap/seekbar_bg" />
+    </FrameLayout>
+    
+
+    <TextView 
+        android:id="@+id/text_ColorDisk"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="从色盘吸管获取颜色" />
+
+    <com.jacob.colorpicker.ColorPickerView
+        android:id="@+id/colorPickerDisk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="120dp"
+        />
+
+</LinearLayout>
